@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/components/StackedCarousel.tsx"],"sourcesContent":["import * as React from 'react'\n\nconst ReactStackedCarousel = function (){\n    return <h1>Hello World</h1>\n}\n\nexport default ReactStackedCarousel"],"names":["React"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;AAEA,MAAM,oBAAoB,GAAG,YAAA;AACzB,IAAA,OAAOA,yDAAoB,CAAA;AAC/B;;;;"}

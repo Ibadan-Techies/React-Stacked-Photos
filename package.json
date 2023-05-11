@@ -1,0 +1,77 @@
+{
+    "name": "react-stacked-carousel",
+    "version": "0.0.1",
+    "description": "A superfast React component that utilizes the power of CSS to create fine stacked cards carousel.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "rollup -c",
+        "start": "rollup -c -w",
+        "lint": "eslint \"src/**/*.{js,tsx}\" --fix --quiet",
+        "pretest": "npm run lint",
+        "test": "node ./__tests/tests.js",
+        "no-watch-test": "node ./__tests/tests.js --no-watch"
+    },
+    "jest": {
+        "globals": {
+            "ts-jest": {}
+        },
+        "transform": {
+            "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testMatch": [
+            "**/?(*.)+(spec|test).js?(x)"
+        ],
+        "moduleNameMapper": {
+            "\\.(scss)$": "<rootDir>/__tests/styleMock.js",
+            "^(components/.+)$": "<rootDir>/src/$1/"
+        },
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx"
+        ],
+        "automock": false,
+        "setupFiles": [
+            "./__tests/setupJest.js"
+        ],
+        "coverageDirectory": "./coverage/",
+        "collectCoverage": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ibadan-Techies/React-Stacked-Carousel.git"
+    },
+    "keywords": [
+        "react",
+        "carousel",
+        "react-component",
+        "reactjs",
+        "carousel",
+        "slider",
+        "ticker"
+    ],
+    "author": "kelvinsekx <utdkelvin@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Ibadan-Techies/React-Stacked-Carousel/issues"
+    },
+    "homepage": "https://github.com/Ibadan-Techies/React-Stacked-Carousel#readme",
+    "devDependencies": {
+        "@types/react": "^18.2.6",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "rollup": "^2.31.0",
+        "rollup-plugin-serve": "^2.0.2",
+        "rollup-plugin-typescript2": "^0.27.3",
+        "typescript": "^4.1.3"
+    },
+    "peerDependencies": {
+        "react": ">= 16.8.0 || 18.0.0",
+        "react-dom": ">= 16.8.0 || 18.0.0"
+    },
+    "files": [
+        "dist"
+    ]
+}
