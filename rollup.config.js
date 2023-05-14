@@ -52,6 +52,7 @@ export default [
         extensions: [".js"],
       }),
       babel({
+        babelrc: false,
         presets: [
           [
             "@babel/preset-react",

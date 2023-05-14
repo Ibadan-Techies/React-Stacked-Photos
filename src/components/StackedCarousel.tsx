@@ -2,7 +2,7 @@ import * as React from 'react'
 import './stackedCarousel.scss'
 
 const { useState, useRef, useEffect } = React
-export default function ReactStackedPhotos ({
+export function ReactStackedPhotos ({
   children,
   width,
   height
@@ -46,7 +46,7 @@ export default function ReactStackedPhotos ({
       // https://stackoverflow.com/questions/15685708/determining-if-mouse-click-happened-in-left-or-right-half-of-div
       const clickTargetWidth = clickTarget?.offsetWidth
       const xCoordInClickTarget =
-        event.clientX - Number(clickTarget?.offsetLeft)
+        event?.clientX - Number(clickTarget?.offsetLeft)
 
       let sideClicked = ''
       if (Number(clickTargetWidth) / 2 > xCoordInClickTarget) {
@@ -71,7 +71,6 @@ export default function ReactStackedPhotos ({
           last?.remove('back')
           setLast(imagesRef.current?.lastElementChild?.classList)
           setActive(false)
-          console.log(last)
         }, 400)
       }, 500)
     }

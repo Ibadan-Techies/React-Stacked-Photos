@@ -1,10 +1,10 @@
 import React from "react";
-import { ReactStackedPhotos } from "../dist/index";
+import ReactStackedCarousel from "../dist/index";
 
 export default function Examples() {
   return (
     <div className="main">
-      <ReactStackedPhotos width={200} height={200}>
+      <ReactStackedCarousel width={200} height={200}>
         <div
           isHovering={{ transform: "rotate(5deg) translateX(30px)" }}
           default={{ transform: "rotate(5deg)" }}
@@ -38,7 +38,7 @@ export default function Examples() {
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </div>
-      </ReactStackedPhotos>
+      </ReactStackedCarousel>
     </div>
   );
 }
