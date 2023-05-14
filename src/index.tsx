@@ -1,1 +1,1 @@
-export { default as ReactStackedPhotos } from "./components/StackedCarousel";
+export { default as ReactStackedPhotos } from './components/StackedCarousel'
