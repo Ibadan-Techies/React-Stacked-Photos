@@ -1,2 +1,1 @@
-import ReactStackedCarousel from "./components/StackedCarousel";
-export default ReactStackedCarousel;
+export { default as ReactStackedPhotos } from "./components/StackedCarousel";

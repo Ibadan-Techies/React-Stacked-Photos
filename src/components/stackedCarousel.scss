@@ -1,0 +1,38 @@
+._9123_imageWrapper {
+  width: 20rem;
+  height: 20rem;
+  box-sizing: border-box;
+  position: relative;
+  border: 10px solid rgb(147, 127, 127, 0.35);
+  transition: transform 0.3s ease-in-out;
+  .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: 5px solid white;
+    box-shadow: 0px 20px 50px rgba(23, 23, 34, 0.23);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+._9123_imageWrapper .stackedCarousel-payload {
+  background-color: white;
+  border-bottom: 20px solid white;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+._9123_imageWrapper .slide-right {
+  transform: rotate(45deg) translateX(150px) !important;
+}
+._9123_imageWrapper .slide-left {
+  transform: rotate(-45deg) translateX(-150px) !important;
+}
+
+._9123_imageWrapper .back {
+  z-index: 1 !important;
+}

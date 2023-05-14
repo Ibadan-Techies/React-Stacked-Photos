@@ -6,6 +6,9 @@ import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import replace from "@rollup/plugin-replace";
+import sass from "rollup-plugin-sass";
+import image from "@rollup/plugin-image";
+import postcss from "rollup-plugin-postcss";
 
 export default [
   {
@@ -20,7 +23,10 @@ export default [
         banner: `"use client"`,
       },
     ],
-    plugins: [typescript({ objectHashIgnoreUnknownHack: true })],
+    plugins: [
+      sass({ insert: true }),
+      typescript({ objectHashIgnoreUnknownHack: true }),
+    ],
     external: ["react", "react-dom"],
   },
   {
@@ -33,6 +39,11 @@ export default [
       },
     ],
     plugins: [
+      image(),
+      postcss({
+        extract: true,
+        extensions: [".css"],
+      }),
       replace({
         preventAssignment: true,
         "process.env.NODE_ENV": JSON.stringify("development"),

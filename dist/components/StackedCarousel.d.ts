@@ -1,3 +1,7 @@
 import * as React from "react";
-declare const ReactStackedCarousel: () => React.JSX.Element;
-export default ReactStackedCarousel;
+import "./stackedCarousel.scss";
+export default function ReactStackedPhotos({ children, width, height, }: {
+    width?: number;
+    height?: number;
+    children: React.ReactElement;
+}): React.JSX.Element;
