@@ -1,5 +1,5 @@
 {
-  "name": "react-stacked-carousel",
+  "name": "react-stacked-photos",
   "version": "0.0.1",
   "description": "A superfast React component that utilizes the power of CSS to create fine stacked cards carousel.",
   "main": "dist/index.js",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ibadan-Techies/React-Stacked-Carousel.git"
+    "url": "git+https://github.com/Ibadan-Techies/React-Stacked-Photos.git"
   },
   "keywords": [
     "react",
@@ -55,9 +55,9 @@
   "author": "kelvinsekx <utdkelvin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ibadan-Techies/React-Stacked-Carousel/issues"
+    "url": "https://github.com/Ibadan-Techies/React-Stacked-Photos/issues"
   },
-  "homepage": "https://github.com/Ibadan-Techies/React-Stacked-Carousel#readme",
+  "homepage": "https://github.com/Ibadan-Techies/React-Stacked-Photos#readme",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.21.5",
