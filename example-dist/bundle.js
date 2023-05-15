@@ -7137,13 +7137,14 @@
 		const {
 		  useState,
 		  useRef,
-		  useEffect
+		  useEffect,
+		  forwardRef
 		} = React__namespace;
-		function ReactStackedPhotos({
+		const ReactStackedPhotos = forwardRef(({
 		  children,
 		  width,
 		  height
-		}) {
+		}) => {
 		  const [isHovering, setIsHovering] = useState(false);
 		  const imagesRef = useRef(null);
 		  const timerRef1 = useRef();
@@ -7218,7 +7219,7 @@
 		      onMouseOut: handleMouseOver
 		    }));
 		  }));
-		}
+		});
 		exports["default"] = ReactStackedPhotos; 
 	} (dist));
 

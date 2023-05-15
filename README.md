@@ -32,8 +32,10 @@ import ReactStackedPhotos from "react-stack-photos";
 
 Then wrap the `<ReactStackedPhotos>` tags around any components - it must be a React Element - you'd like to see the effect on.
 
+By default, the width and height of the ReactStackedPhotos will be zero, 0, so set the width and height on the parent ReactStackedPhotos
+
 ```jsx
-<ReactStackedPhotos>
+<ReactStackedPhotos width={200} height={200}>
   <div>1</div>
   <div>2</div>
   <div>3</div>
@@ -45,7 +47,7 @@ Then wrap the `<ReactStackedPhotos>` tags around any components - it must be a R
 Add styles to your children components as you wish
 
 ```jsx
-<ReactStackedPhotos>
+<ReactStackedPhotos width={200} height={200}>
   <div style={{ fontSize: "7rem" }}>1</div>
   <div style={{ fontSize: "7rem" }}>2</div>
   <div style={{ fontSize: "7rem" }}>3</div>
@@ -58,7 +60,7 @@ Since we would most likely be using ReactStackedPhotos with images, let's replac
 The images used here are some random images on the web. Feel free to replace it with yours.
 
 ```jsx
-<ReactStackedPhotos>
+<ReactStackedPhotos width={200} height={200}>
   <div>
     <img
       src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Photo.jpg"
@@ -122,7 +124,6 @@ Also I want an hover effect. This is optional. But is something you will love.
 To add an hover style to your children components, simply add the styles to a isHoveringStyles component.
 
 ```js
-ReactStackedCarousel width={200} height={200}>
   <div>
     ...
   </div>
@@ -152,7 +153,7 @@ import MyComponent from "../components/MyComponent";
 import ReactStackedCarousel from "react-stacked-photos";
 
 const App = () => (
-  <ReactStackedCarousel>
+  <ReactStackedCarousel width={100} height={100}>
     <MyComponent />
     <MyComponent />
     <MyComponent />

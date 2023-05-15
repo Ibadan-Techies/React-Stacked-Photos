@@ -1,7 +1,9 @@
 import * as React from "react";
 import "./stackedCarousel.scss";
-export declare function ReactStackedPhotos({ children, width, height, }: {
+type TReactStackedPhotos = {
     width?: number;
     height?: number;
     children: React.ReactElement;
-}): JSX.Element;
+};
+export declare const ReactStackedPhotos: React.FC<TReactStackedPhotos>;
+export {};

@@ -65,8 +65,8 @@ function __rest(s, e) {
 
 ___$insertStyle("._9123_imageWrapper {\n  width: 20rem;\n  height: 20rem;\n  box-sizing: border-box;\n  position: relative;\n  border: 10px solid rgba(147, 127, 127, 0.35);\n  transition: transform 0.3s ease-in-out;\n}\n._9123_imageWrapper .img {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  position: absolute;\n  border: 5px solid white;\n  box-shadow: 0px 20px 50px rgba(23, 23, 34, 0.23);\n  z-index: 2;\n  transition: transform 0.3s ease-in-out;\n}\n\n._9123_imageWrapper .stackedCarousel-payload {\n  background-color: white;\n  border-bottom: 20px solid white;\n  display: flex;\n  flex-direction: column;\n  font-size: small;\n}\n\n._9123_imageWrapper .slide-right {\n  transform: rotate(45deg) translateX(150px) !important;\n}\n\n._9123_imageWrapper .slide-left {\n  transform: rotate(-45deg) translateX(-150px) !important;\n}\n\n._9123_imageWrapper .back {\n  z-index: 1 !important;\n}");
 
-const { useState, useRef, useEffect } = React__namespace;
-function ReactStackedPhotos({ children, width, height, }) {
+const { useState, useRef, useEffect, forwardRef } = React__namespace;
+const ReactStackedPhotos = forwardRef(({ children, width, height }) => {
     const [isHovering, setIsHovering] = useState(false);
     const imagesRef = useRef(null);
     const timerRef1 = useRef();
@@ -123,7 +123,7 @@ function ReactStackedPhotos({ children, width, height, }) {
         console.log(rest);
         return (React__namespace.createElement("div", Object.assign({ key: index, className: "img " }, rest, { style: Object.assign(Object.assign({}, style), isHovering ? Object.assign({}, isHoveringStyles) : {}), onMouseOver: handleMouseOver, onMouseOut: handleMouseOver })));
     })));
-}
+});
 
 exports["default"] = ReactStackedPhotos;
 //# sourceMappingURL=index.js.map
