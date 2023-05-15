@@ -90,7 +90,6 @@ export const ReactStackedPhotos: React.FC<TReactStackedPhotos> = ({
         (child: React.ReactElement, index) => {
           const { isHoveringStyles, defaultStyles, style, ...rest } =
             child.props
-          console.log(rest)
           return (
             <div
               key={index}
