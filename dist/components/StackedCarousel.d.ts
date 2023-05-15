@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./stackedCarousel.scss";
-type TReactStackedPhotos = {
+interface TReactStackedPhotos {
     width?: number;
     height?: number;
-    children: React.ReactElement;
-};
+    children?: React.ReactNode;
+}
 export declare const ReactStackedPhotos: React.FC<TReactStackedPhotos>;
 export {};
