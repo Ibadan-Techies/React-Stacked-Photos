@@ -4,8 +4,9 @@
   "description": "A superfast React component that utilizes the power of CSS to create fine stacked cards carousel.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rollup -c",
-    "start": "rollup -c -w",
+    "build": "rollup -c rollup.config.start.js",
+    "start": "rollup -c rollup.config.start.js -w",
+    "dev": "rollup -c rollup.config.dev.js -w",
     "lint": "eslint \"src/**/*.{js,tsx}\" --fix --quiet",
     "pretest": "npm run lint",
     "test": "node ./__tests/tests.js"
