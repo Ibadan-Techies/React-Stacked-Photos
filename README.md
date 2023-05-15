@@ -39,6 +39,8 @@ Then wrap the `<ReactStackedPhotos>` tags around any components - it must be a R
   <div>3</div>
 </ReactStackedPhotos>
 ```
+![stackedphotos1](https://github.com/Ibadan-Techies/React-Stacked-Carousel/assets/51183064/79187e90-09ef-4765-87dc-1790adeaba09)
+
 
 Add styles to your children components as you wish
 
@@ -49,6 +51,8 @@ Add styles to your children components as you wish
   <div style={{ fontSize: "7rem" }}>3</div>
 </ReactStackedPhotos>
 ```
+![stackedphotos2](https://github.com/Ibadan-Techies/React-Stacked-Carousel/assets/51183064/36770638-7d0c-4f52-be44-0bd223f8dd1b)
+
 
 Since we would most likely be using ReactStackedPhotos with images, let's replace its children with some images.
 The images used here are some random images on the web. Feel free to replace it with yours.
@@ -79,8 +83,10 @@ The images used here are some random images on the web. Feel free to replace it 
   </div>
 </ReactStackedPhotos>
 ```
+![stackedphotos3](https://github.com/Ibadan-Techies/React-Stacked-Carousel/assets/51183064/293b50b5-6007-4e80-a0f0-4b37495d7fef)
 
-It is important to know that all ReactStackedPhotos child must be a div. We wrapped our images in a div.
+
+**It is important to know that all ReactStackedPhotos child must be a div.** We wrapped our images in a div.
 
 I went on to add some styles to my children component to cause those slant rotate effect that I want.
 
@@ -133,6 +139,7 @@ ReactStackedCarousel width={200} height={200}>
     ...
   </div>
 ```
+![stackedphotos4](https://github.com/Ibadan-Techies/React-Stacked-Carousel/assets/51183064/69432859-0c00-431f-bedf-cacfef4a5ce2)
 
 There you have it. Super simple and stressfree.
 
