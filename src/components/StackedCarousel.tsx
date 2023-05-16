@@ -88,17 +88,18 @@ export const ReactStackedPhotos: React.FC<TReactStackedPhotos> = ({
       {React.Children.map(
         React.Children.toArray(children),
         (child: React.ReactElement, index) => {
-          const { isHoveringStyles, defaultStyles, style, ...rest } =
-            child.props
+          const mergedProps = {
+            ...child.props,
+            key: index,
+            className: 'img',
+            style: {
+              ...child.props.style,
+              ...(isHovering ? child.props['data-isHovering'] : {})
+            }
+          }
           return (
             <div
-              key={index}
-              className={'img '}
-              {...rest}
-              style={Object.assign(
-                { ...style },
-                isHovering ? { ...isHoveringStyles } : {}
-              )}
+              {...mergedProps}
               onMouseOver={handleMouseOver}
               onMouseOut={handleMouseOver}
             ></div>
