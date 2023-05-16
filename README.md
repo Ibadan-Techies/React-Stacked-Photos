@@ -129,13 +129,13 @@ To add an hover style to your children components, simply add the styles to a is
   </div>
   <div
     style={{ transform: "rotate(4deg)" }}
-    isHoveringStyles={{ transform: "rotate(2deg) translateX(30px)" }}
+    data-isHovering={{ transform: "rotate(2deg) translateX(30px)" }}
   >
     ...
   </div>
   <div
     style={{ transform: "rotate(-10deg)" }}
-    isHoveringStyles={{ transform: "rotate(-5deg) translateX(-30px)" }}
+   data-isHovering={{ transform: "rotate(-5deg) translateX(-30px)" }}
   >
     ...
   </div>
@@ -169,4 +169,4 @@ export default App;
 | :----------------- | :------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
 | `width`            | `number` in px | `{}`    | Used to set the width of parent of the photos or children components                                               |
 | `height`           | `number` in px | `""`    | Used to set the width of parent of the photos or children component                                                |
-| `isHoveringStyles` | `cssStyles`    | `{}`    | used to add hover effect on each child of the ReactStackedPhotos. Apply it to each child of the ReactStackedPhotos |
+| `data-isHovering` | `cssStyles`    | `{}`    | used to add hover effect on each child of the ReactStackedPhotos. Apply it to each child of the ReactStackedPhotos |
