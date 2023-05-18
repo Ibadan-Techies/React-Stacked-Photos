@@ -3,7 +3,8 @@ import "./stackedCarousel.scss";
 interface TReactStackedPhotos {
     width?: number;
     height?: number;
-    children?: React.ReactNode;
+    children: React.ReactElement[];
+    onClick?: () => void;
 }
-export declare const ReactStackedPhotos: React.FC<TReactStackedPhotos>;
+export declare const ReactStackedPhotos: React.ForwardRefExoticComponent<TReactStackedPhotos & React.RefAttributes<HTMLDivElement>>;
 export {};
