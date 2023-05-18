@@ -169,4 +169,4 @@ export default App;
 | :----------------- | :------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
 | `width`            | `number` in px | `{}`    | Used to set the width of parent of the photos or children components                                               |
 | `height`           | `number` in px | `""`    | Used to set the width of parent of the photos or children component                                                |
-| `data-isHovering` | `cssStyles`    | `{}`    | used to add hover effect on each child of the ReactStackedPhotos. Apply it to each child of the ReactStackedPhotos |
+| `data-ishovering` | `cssStyles`    | `{}`    | used to add hover effect on each child of the ReactStackedPhotos. Apply it to each child of the ReactStackedPhotos |
