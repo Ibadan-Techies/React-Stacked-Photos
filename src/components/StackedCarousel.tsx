@@ -17,7 +17,7 @@ export const ReactStackedPhotos = forwardRef<
 
   const imagesContainerRef = useRef<HTMLDivElement>(null);
 
-  const stackedRef = (ref || imagesContainerRef) as React.MutableRefObject<
+  const stackedRef = ((ref != null) || imagesContainerRef) as React.MutableRefObject<
     HTMLDivElement & {
       lastElementChild: HTMLElement | null;
       swipeLeft: (e: any) => void;
