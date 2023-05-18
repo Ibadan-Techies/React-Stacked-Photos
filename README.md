@@ -129,13 +129,13 @@ To add an hover style to your children components, simply add the styles to a is
   </div>
   <div
     style={{ transform: "rotate(4deg)" }}
-    data-isHovering={{ transform: "rotate(2deg) translateX(30px)" }}
+    data-ishovering={{ transform: "rotate(2deg) translateX(30px)" }}
   >
     ...
   </div>
   <div
     style={{ transform: "rotate(-10deg)" }}
-   data-isHovering={{ transform: "rotate(-5deg) translateX(-30px)" }}
+   data-ishovering={{ transform: "rotate(-5deg) translateX(-30px)" }}
   >
     ...
   </div>
